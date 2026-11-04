@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.huf.bot'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.huf.bot"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // لا نحتاج مكتبات خارجية، الكود يعتمد على مكتبات أندرويد الأساسية
+}
